@@ -251,7 +251,8 @@ public class MediaPlayerCtrl : MonoBehaviour {
 			
 			#endif
 			#if UNITY_ANDROID 
-			string sd_path = "http://cdn.cs50.net/2016/fall/lectures/0/week0_360_TB.mp4";
+			int num = LectureChooser.lectureNum;
+			string sd_path = "http://cdn.cs50.net/2016/fall/lectures/" + num + "/week" + num + "_360_TB.mp4";
 			if(m_bSupportRockchip)
 			{
 				Call_SetRockchip(m_bSupportRockchip);
